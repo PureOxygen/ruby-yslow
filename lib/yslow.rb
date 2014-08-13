@@ -6,7 +6,7 @@ require File.expand_path("yslow/result",  File.dirname(__FILE__))
 module YSlow
   def self.phantomjs value=nil
     @@phantomjs = value unless value.nil?
-    @@phantomjs ||= Phantomjs.path
+    #@@phantomjs ||= Phantomjs.path
   end
 
   def self.path value=nil
