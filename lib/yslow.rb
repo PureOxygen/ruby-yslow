@@ -1,4 +1,3 @@
-require "phantomjs"
 require "open3"
 
 require File.expand_path("yslow/version", File.dirname(__FILE__))
