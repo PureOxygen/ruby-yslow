@@ -20,7 +20,7 @@ module YSlow
     command.push(url)
 
     command.unshift(self.path)
-    command.unshift(self.phantomjs)
+    command.unshift("phantomjs")
 
     err, out, status = nil
     ::Open3.popen3(command.join(" ")) do |i, o, e, t|
